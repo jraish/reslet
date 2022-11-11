@@ -25,6 +25,11 @@ const linking: LinkingOptions<RootStackParamList> = {
               TabTwoScreen: 'two',
             },
           },
+          APIFetchTest: {
+            screens: {
+              APIFetchTestScreen: 'APIFetchTest'
+            }
+          }
         },
       },
       Modal: 'modal',

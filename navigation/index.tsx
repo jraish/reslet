@@ -12,6 +12,7 @@ import { ColorSchemeName, Pressable } from 'react-native';
 
 import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
+import APIFetchTest from '../pages/APIFetchTest';
 import ModalScreen from '../pages/ModalScreen';
 import NotFoundScreen from '../pages/NotFoundScreen';
 import TabOneScreen from '../pages/TabOneScreen';
@@ -89,6 +90,14 @@ function BottomTabNavigator() {
         component={TabTwoScreen}
         options={{
           title: 'Tab Two',
+          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+        }}
+      />
+      <BottomTab.Screen
+        name="APIFetchTest"
+        component={APIFetchTest}
+        options={{
+          title: 'API Fetch Test',
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
         }}
       />
